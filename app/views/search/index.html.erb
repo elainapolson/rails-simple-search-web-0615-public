@@ -1,0 +1,7 @@
+  <% if @fuzzy_words %>
+  <% @fuzzy_words.each do |word| %>
+  <%= word.name %>
+  <% end %>
+  <% else %>
+  <%= "No results matching that query." %>
+  <% end %>
